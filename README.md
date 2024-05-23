@@ -3,7 +3,7 @@
 
 ## Уже запущенная версия
 
-[Deploy](http://localhost:3000)
+[Deploy](https://grand-test.vercel.app/)
 
 
 ## Для запуска используя dev версии
