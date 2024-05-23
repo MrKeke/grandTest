@@ -6,7 +6,7 @@ import itemReducer from '../features/items/itemsSlice';
 const persistConfig = {
   key: 'root',
   version: 1,
-  whitelist: ['items'],
+  whitelist: ['items','comments'],
   storage,
 };
 
