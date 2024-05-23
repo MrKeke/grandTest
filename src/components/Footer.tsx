@@ -22,7 +22,7 @@ export const Footer: React.FC = () => {
                     </svg>
                 </a>
             </div>
-            <span className="uppercase text-6xl font-extrabold text-white opacity-60 hover:opacity-100 cursor-pointer lg:block hidden">GRAND-TORG</span>
+            <span className="uppercase text-6xl font-extrabold text-white opacity-60 hover:opacity-100 cursor-pointer lg:block hidden">Дивергент</span>
             <div className="flex gap-6">
                 <a className="opacity-60 hover:opacity-100" href="https://t.me/foxis78" target="_blank"
                    rel="noreferrer">
