@@ -25,13 +25,13 @@ export const Header: React.FC = () => {
                 <div className="flex gap-10">
                     <Autocomplete
                         value={value}
-                        className="select-none"
+                        className="select-none w-[200px] lg:w-[300px]"
                         onChange={(event, newValue) => {
                             setValue(newValue);
                             if (newValue) {
                                 navigate(`/blog/${newValue.id}`)
                                 setValue(null)
-                                
+
                             }
                         }}
                         inputValue={inputValue}
@@ -46,7 +46,6 @@ export const Header: React.FC = () => {
                         options={items}
                         getOptionLabel={(item) => item.title}
                         sx={{
-                            width: 300,
                             '& .MuiInputBase-root': {
                                 backgroundColor: '#2D2F45',
                                 color: '#F6DBBB',
