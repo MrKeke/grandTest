@@ -65,6 +65,12 @@ export const itemSlice = createSlice({
         },
         addItem: (state, action: PayloadAction<IAddItem>) => {
             const items = Object.values(state.items).flat()
+            if(items.length === 0) {
+                state.items[action.payload.country] = [{
+                   ...action.payload.info,
+                    id: 1
+                }]
+            }
             const lastId = Math.max(...items.map((item) => item.id)) + 1
             state.items[action.payload.country] = [...state.items[action.payload.country], {
                 ...action.payload.info,
